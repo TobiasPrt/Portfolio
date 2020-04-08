@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+	<meta charset="utf-8">	
+	<meta name="author" content="Tobias Pörtner">
+	<meta name="date" content="2020-04-08">
+	<meta name="description" content="Hi, ich bin Tobias, ich bin Frontend-Developer und UX Designer mit einem Backend-Entwickler-Kenntnissen aus Kiel. ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="Tobias Pörtner">
+	<meta property="og:image" content="https://tobiaspoertner.com/img/imessage-icon.jpg">
+	<link rel="apple-touch-startup-image" href="/launch.png">
+
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#444444">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Tobias Pörtner</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.min.css">
+</head>
+<body class="preload">
+	<script src="scripts/script.js"></script>
+	<header>
+		<div class="outer-nav">
+			<nav class="nav">
+				<a class="main-logo" href="">
+					<span class="logo-text">TP</span>
+				</a>
+				<ul class="nav-right">
+					<li class="list-item">
+						<a class="transition-link" href="">Home</a>
+					</li>
+					<li class="list-item">
+						<a class="transition-link" href="contact">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<h1>Hi, ich bin Tobias, <br>Frontend-Entwickler und UX Designer aus Kiel</h1>
+		</section>
+		<section class="about" id="about">
+			<picture class="about-left">
+				<source srcset="img/profilepic_desktop.webp" type="image/webp">
+				<source srcset="img/profilepic_desktop.jpg" type="image/jpeg">
+				<img src="img/profilepic_desktop.jpg" alt="Bild von Tobias" title="Hier sieht man mich mit kurzen Haaren. Aktuell sind sie länger.">
+			</picture>
+			<div class="about-right">
+				<span class="text">
+					Schon früh während meines Multimedia Production-Studium
+					an der Fachhochschule Kiel habe ich meine Passion für
+					Web- und App-Entwicklung entdeckt.
+					Mit großer Freude arbeite ich an allen Teilen der Entwicklung, 
+					von Konzeption über Design bis hin zur technischen Umsetzung.
+					Neben der Arbeit am Frontend fühle ich mich auch im serverseitigen 
+					Entwickeln und im Umgang mit Datenbanken wohl. Außerdem bringe 
+					ich Organisationstalent mit und bin ein klarer Teamplayer.
+				</span>
+				<div class="about-skills">
+					<div class="skills-left">
+						<img class="skillsicon" src="img/paint-brush-solid.svg" alt="Design-Fähigkeiten">
+						<ul>
+							<li>UI-Design</li>
+							<li>Fotobearbeitung</li>
+							<li>Printdesign</li>
+							<li>Vektorgrafik</li>
+						</ul>
+					</div>
+					<div class="skills-right">
+						<img class="skillsicon" src="img/code-solid.svg" alt="Code-Fähigkeiten">
+						<ul>
+							<li>HTML & CSS</li>
+							<li>JavaScript</li>
+							<li>PHP & MySQL</li>
+							<li>Python & PostgreSQL</li>
+						</ul>
+					</div>
+				</div>
+				<div class=" about-buttons buttonholder btn-cont">
+					<a class="btn" href="https://www.linkedin.com/in/tobiaspoertner" target="_blank" rel="noreferrer">
+						LinkedIn
+						<span class="line-1"></span>
+						<span class="line-2"></span>
+						<span class="line-3"></span>
+						<span class="line-4"></span>
+					</a>
+					<a class="btn" href="https://github.com/TobiasPrt" target="_blank" rel="noreferrer">
+						Github
+						<span class="line-1"></span>
+						<span class="line-2"></span>
+						<span class="line-3"></span>
+						<span class="line-4"></span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="divider" id="scrolldown">
+			<img src="img/down-arrow.svg" alt="Pfeil nach unten">
+		</section>
+		<section id="project01" class="project">
+			<h2>Mate - Studien&shy;organizer (in Progress)</h2>
+			<picture>
+				<source srcset="img/matepreview.webp" type="image/webp">
+				<source srcset="img/matepreview.jpg" type="image/jpeg">
+				<img src="img/matepreview.jpg" alt="Bild zu Mate - Studienorganizer" title="Das ist kein Mockup, sondern sind echte Screenshots vom Prototypen.">	
+			</picture>
+				
+			<p>
+				Mate ist eine mobile cross-plattform App, mit der Studierende Semesterpläne,
+				Nachrichten, Noten, ein Mensa-Rating und sonstige das Studium betreffende 
+				Angelegenheiten verwalten können.
+			</p>
+			<h3>Herausforderungen</h3>
+			<p>
+				Neben dem Lernen einer neuen widgetbasierten Sprache (Flutter/Dart) waren die
+				fehlenden API der Hochschule eine der Hürden.
+			</p>
+			<h3>Lösungen</h3>
+			<p>
+				Für den Prototypen musste ein Web-Scraper entwickelt werden, der in eine 
+				MySQL Datenbank schreibt. Das Gerät vom Client fragt dann eine 
+				minimale API ab. In der aktuellen Entwicklung wird auf ein
+				Python-Backend mit Postgres-Datenbank, auf Heroku gehostet, gesetzt.
+			</p>
+			
+			<div class="skills">
+				<div class="skills-left">
+					<img class="skillsicon" src="img/paint-brush-solid.svg" alt="Designskills">
+					<ul>
+						<li>Adobe XD</li>
+						<li>Fotobearbeitung</li>
+						<li>Vektorgrafik</li>
+					</ul>
+				</div>
+				<div class="skills-right">
+					<img class="skillsicon" src="img/code-solid.svg" alt="Code-Skills">
+					<ul>
+						<li>PHP</li>
+						<li>MySQL / SQLite</li>
+						<li>Flutter (Dart)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="buttonholder btn-cont">
+				<a class="btn" href="https://github.com/TobiasPrt/Mate" target="_blank" rel="noreferrer">
+					Code
+					<span class="line-1"></span>
+					<span class="line-2"></span>
+					<span class="line-3"></span>
+					<span class="line-4"></span>
+				</a>
+				<a class="btn" href="https://mate-app.de" target="_blank" rel="noreferrer">
+					Website
+					<span class="line-1"></span>
+					<span class="line-2"></span>
+					<span class="line-3"></span>
+					<span class="line-4"></span>
+				</a>
+			</div>
+		</section>
+		<hr style="width: 60%; max-width: 1000px; border: none; height: 1px; background-color: #3E3E3E; opacity: 0.2">
+		<section class="project" id="project02">
+			<h2>Mate - Newsletter&shy;verwaltung</h2>
+			<picture>
+				<source srcset="img/newsletterpreview.webp" type="image/webp">
+				<source srcset="img/newsletterpreview.jpg" type="image/jpeg">
+				<img src="img/newsletterpreview.jpg" alt="Bild zum Mate Newsletter" title="Design war hier zentral, stattdessen war Usability im Fokus.">
+			</picture>
+			
+			<p>
+				Dieses Projekt umfasst die responsiv abrufbare Verwaltung von Empfängern, 
+				das Schreiben, Bearbeiten und Senden von Newslettern und kleinere Echtzeitfilter und Textsuchen.
+			</p>
+			<h3>Herausforderungen</h3>
+			<p>
+				Besonders herausfordernd war das auseinandersetzen 
+				mit der Gestaltung eines Newsletters, da diverse Mail-Clients und Anbieter 
+				unterschiedliche Features unterstützen, dieser jedoch einheitlich dargestellt werden soll.
+			</p>
+			<h3>Lösungen</h3>
+			<p>
+				Das entwickeln von Textsuchen und Filtern in Echtzeit für eine funktionale UX
+				war schnell umgesetzt. Die Lösung für die Gestaltung der Templates war mit html 
+				Tabellen und CSS-Inline-Tags zu arbeiten, um die entsprechenden Elemente zu 
+				positionieren, da diverse klassische CSS-Properties stehen nicht zur Verfügung stehen.
+			</p>
+			<div class="skills">
+				<div class="skills-left">
+					<img class="skillsicon" src="img/code-solid.svg" alt="Designskills">
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+						<li>MySQL</li>
+					</ul>
+				</div>
+			</div>
+			<div class="buttonholder btn-cont">
+				<a class="btn" href="https://github.com/TobiasPrt/Newsletter-Management" target="_blank" rel="noreferrer">
+					Code
+					<span class="line-1"></span>
+					<span class="line-2"></span>
+					<span class="line-3"></span>
+					<span class="line-4"></span>
+				</a>
+				<a class="btn" href="https://newsletter.tobiaspoertner.com" target="_blank" rel="noreferrer">
+					Demo
+					<span class="line-1"></span>
+					<span class="line-2"></span>
+					<span class="line-3"></span>
+					<span class="line-4"></span>
+				</a>
+			</div>
+		</section>
+		<hr style="width: 60%; max-width: 1000px; border: none; height: 1px; background-color: #3E3E3E; opacity: 0.2">
+		<section class="project" id="project03">
+			<h2>Cards - Karteikarten</h2>
+			<picture>
+				<source srcset="img/cardspreview.webp" type="image/webp">
+				<source srcset="img/cardspreview.jpg" type="image/jpeg">
+				<img src="img/cardspreview.jpg" alt="Bild zur Cards App" title="Die komplette App ist über die Weihnachtstage entstanden. Und ja, ich war bei meiner Familie...">
+			</picture>
+			
+			<p>
+				Cards ist eine von Studierenden genutzte für Handys optimierte Web-App zum Karteikarten lernen.
+				Features umfassen Fortschrittsbalken, Auftreten von Karten nach Lernfortschritt und
+				Benutzereinstellungen.
+			</p>
+			<h3>Herausforderungen</h3>
+			<p>
+				Die Anwendung ist über die Weihnachtstage im letzten Jahr entstanden, 
+				um für die Klausuren im Januar damit lernen zu können. Schwierig war es ein System zu entwickeln, 
+				um Karten Bedarfsorientiert passend vorzuschlagen.
+			</p>
+			<h3>Lösungen</h3>
+			<p>
+				Nachdem ich meine Datenbank neu aufgestellt habe, konnte ich eine extra Relation für das Speichern 
+				des Fortschritts einzelner Karten bei individuellen Nutzern erstellen. 
+				Das hat das persistente Speichern des Lernfortschritts ermöglicht.
+			</p>
+			<div class="skills">
+				<div class="skills-left">
+					<img class="skillsicon" src="img/paint-brush-solid.svg" alt="Designskills">
+					<ul>
+						<li>Adobe XD</li>
+						<li>Vektorgrafik</li>
+					</ul>
+				</div>
+				<div class="skills-right">
+					<img class="skillsicon" src="img/code-solid.svg" alt="Code-Skills">
+					<ul>
+						<li>HTML & CSS</li>
+						<li>JavaScript</li>
+						<li>PHP & MySQL</li>
+					</ul>
+				</div>
+			</div>
+			<div class="buttonholder btn-cont">
+				<a class="btn" href="https://github.com/TobiasPrt/Cards" target="_blank" rel="noreferrer">
+					Code
+					<span class="line-1"></span>
+					<span class="line-2"></span>
+					<span class="line-3"></span>
+					<span class="line-4"></span>
+				</a>
+				<a class="btn" href="https://cards.tobiaspoertner.com" target="_blank" rel="noreferrer">
+					WebApp
+					<span class="line-1"></span>
+					<span class="line-2"></span>
+					<span class="line-3"></span>
+					<span class="line-4"></span>
+				</a>
+			</div>
+		</section>
+		<hr style="width: 60%; max-width: 1000px; border: none; height: 1px; background-color: #3E3E3E; opacity: 0.2">
+		<section class="project" id="project04">
+			<h2>FAQ Magazin</h2>
+			<picture>
+				<source srcset="img/faqpreview.webp" type="image/webp">
+				<source srcset="img/faqpreview.jpg" type="image/jpeg">
+				<img src="img/faqpreview.jpg" alt="Bild zum FAQ Magazin" title="Dieses Magazin zu machen hat richtig Spaß gemacht, vor allem hat die Teamdynamik mit Junit und Lena super gepasst.">
+			</picture>
+			
+			<p>
+				Im Rahmen unseres Moduls Visuelle Medien haben wir in 3er-Gruppen ein Magazin in 
+				A5 produziert, welches sich mit dem Thema „Farbe wirkt“ beschäftigt und kommenden 
+				Semestern Grundlagenwissen darüber vermittelt.
+			</p>
+			<h3>Herausforderungen</h3>
+			<p>
+				Bei einer großen Menge an Inspiration war es schwierig passende Layoutdesigns 
+				herauszuarbeiten, besonders das Cover benötigte diverse Anläufe. Zudem war es auch 
+				eine Herausforderung bei der Fotoreihe geeignete Bilder auszuwählen um nicht nur den 
+				farblichen Kontrast, sondern auch den inhaltlichen Kontrast der Fotoserie sichtbar aufzuzeigen.
+			</p>
+			<h3>Lösungen</h3>
+			<p>
+				Gelöst haben wir die Herausforderungen vor allem durch gute Teamarbeit, 
+				Kommunikation und Aufgabenteilung.Nach Sammeln von Inspirationen konnten wir uns 
+				auf Designprinzipien einigen, die die Grundlage für kommende Entscheidungen lieferten: 
+				viel Weißraum, Akzentfarbe Rot und geometrische Formen als Thema. 
+			</p>
+			<div class="skills">
+				<div class="skills-left">
+					<img class="skillsicon" src="img/paint-brush-solid.svg" alt="Designskills">
+					<ul>
+						<li>Printdesign</li>
+						<li>Fotobearbeitung</li>
+						<li>Fotoaufnahme</li>
+					</ul>
+				</div>
+			</div>
+			<div class="buttonholder btn-cont">
+				<a class="btn" href="pdf/FAQ.pdf" target="_blank" rel="noreferrer">
+					PDF
+					<span class="line-1"></span>
+					<span class="line-2"></span>
+					<span class="line-3"></span>
+					<span class="line-4"></span>
+				</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<span>&copy; 2020 Tobias Pörtner</span>
+		<span><a href="impressum">Impressum</a></span>
+	</footer>
+	<script>
+		document.getElementById("scrolldown").addEventListener('click', function() {
+			// Scroll to a certain element
+			document.querySelector('#project01').scrollIntoView({ 
+			  behavior: 'smooth' 
+			});
+		}, false)
+		
+		window.addEventListener('resize', function() {
+			if (!window.innerWidth < 1024 && window.innerHeight > 900) {
+				element = document.getElementById('about')
+				var space = window.innerHeight - element.offsetTop - element.offsetHeight
+				element.style.paddingBottom = space + 'px';
+			}
+		}, false)
+		// set padding dynamic
+		if (!window.innerWidth < 1024 && window.innerHeight > 900) {
+			element = document.getElementById('about')
+			var space = window.innerHeight - element.offsetTop - element.offsetHeight
+			element.style.paddingBottom = space + 'px';
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+	<meta charset="utf-8">	
+	<meta name="author" content="Tobias Pörtner">
+	<meta name="date" content="2020-04-08">
+	<meta name="description" content="Hi, ich bin Tobias, Frontend-Entwickler aus Kiel und das ist mein Impressum.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="Tobias Pörtner - Impressum">
+	<meta property="og:image" content="https://tobiaspoertner.com/img/imessage-icon.jpg">
+	<link rel="apple-touch-startup-image" href="/launch.png">
+
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#444444">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Tobias Pörtner</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.min.css">
+	
+</head>
+<body class="preload" style="min-height: calc(100vh - 20px)">
+	<script src="../scripts/script.js"></script>
+	<header>
+		<div class="outer-nav">
+			<nav class="nav">
+				<a class="main-logo" href="../">
+					<span class="logo-text">TP</span>
+				</a>
+				<ul class="nav-right">
+					<li class="list-item">
+						<a class="transition-link" href="/">Home</a>
+					</li>
+					<li class="list-item">
+						<a class="transition-link" href="contact">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="contact">
+		<section class="hero">
+			<h1>Impressum</h1>
+		</section>
+		<section class="text">
+			<p>verantwortlich:<br>Tobias Pörtner <br> Kirchhofallee 5 <br>24103 Kiel <br><br><a href="mailto:me@tobiaspoertner.com">me@tobiaspoertner.com</a></p>
+		</section>
+	</main>
+
+
+	<footer id="footer">
+		<span>&copy; 2020 Tobias Pörtner</span>
+		<span><a href="impressum">Impressum</a></span>
+	</footer>
+	<script>
+			element = document.getElementById('contact')
+			element2 = document.getElementById('footer')
+			var space = window.innerHeight - element.offsetTop - element.offsetHeight - element2.offsetHeight - 20
+			if (space < 0) {
+				space = 0
+			}
+			element.style.paddingBottom = space + 'px';
+	</script>
+</body>
+</html>
